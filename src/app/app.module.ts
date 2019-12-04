@@ -1,17 +1,24 @@
-import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
-import { CoreModule } from './modules/core/core.module';
+import { NgModule } from "@angular/core";
+import { BrowserModule } from "@angular/platform-browser";
+import { FormsModule } from "@angular/forms";
+import { CoreModule } from "./modules/core/core.module";
+import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
-import { AppComponent } from './app.component';
-import { AppRoutingModule } from './modules/routing/app-routing.module';
-import { WelcomeComponent } from './pages/welcome/welcome.component';
-import { SignupComponent } from './components/auth/signup/signup.component';
-import { LoginComponent } from './components/auth/login/login.component';
-import { TrainingComponent } from './components/training/training.component';
+import { AppComponent } from "./app.component";
+import { AppRoutingModule } from "./modules/routing/app-routing.module";
+import { WelcomeComponent } from "./pages/welcome/welcome.component";
+import { SignupComponent } from "./components/auth/signup/signup.component";
+import { LoginComponent } from "./components/auth/login/login.component";
+import { TrainingComponent } from "./components/training/training.component";
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, CoreModule, AppRoutingModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    CoreModule,
+    AppRoutingModule,
+    BrowserAnimationsModule
+  ],
   declarations: [
     AppComponent,
     WelcomeComponent,
