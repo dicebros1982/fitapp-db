@@ -10,6 +10,11 @@ import { WelcomeComponent } from "./pages/welcome/welcome.component";
 import { SignupComponent } from "./components/auth/signup/signup.component";
 import { LoginComponent } from "./components/auth/login/login.component";
 import { TrainingComponent } from "./components/training/training.component";
+import { HeaderComponent } from "./components/navigation/header/header.component";
+import { SidenavListComponent } from "./components/navigation/sidenav-list/sidenav-list.component";
+import { NewTrainingComponent } from "./components/training/new-training/new-training.component";
+import { PastTrainingsComponent } from "./components/training/past-trainings/past-trainings.component";
+import { CurrentTrainingComponent } from "./components/training/current-training/current-training.component";
 
 @NgModule({
   imports: [
@@ -24,7 +29,12 @@ import { TrainingComponent } from "./components/training/training.component";
     WelcomeComponent,
     SignupComponent,
     LoginComponent,
-    TrainingComponent
+    TrainingComponent,
+    HeaderComponent,
+    SidenavListComponent,
+    NewTrainingComponent,
+    PastTrainingsComponent,
+    CurrentTrainingComponent
   ],
   bootstrap: [AppComponent]
 })
