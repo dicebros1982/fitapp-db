@@ -6,6 +6,7 @@ import { BrowserAnimationsModule } from "@angular/platform-browser/animations";
 
 // services
 import { AuthService } from "./services/auth.service";
+import { TrainingService } from "./services/training.service";
 
 import { AppComponent } from "./app.component";
 import { AppRoutingModule } from "./modules/routing/app-routing.module";
@@ -41,7 +42,7 @@ import { StopTrainingModalComponent } from "./components/training/current-traini
     CurrentTrainingComponent,
     StopTrainingModalComponent
   ],
-  providers: [AuthService],
+  providers: [AuthService, ],
   bootstrap: [AppComponent],
   entryComponents: [StopTrainingModalComponent]
 })
