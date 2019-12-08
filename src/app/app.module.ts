@@ -3,11 +3,15 @@ import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { CoreModule } from './modules/core/core.module';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { AngularFireModule } from '@angular/fire';
+import { AngularFirestoreModule } from '@angular/fire/firestore';
 
 // services
 import { AuthService } from './services/auth.service';
 import { TrainingService } from './services/training.service';
-
+// environment
+import { environment } from '../environments/environment';
+//components
 import { AppComponent } from './app.component';
 import { AppRoutingModule } from './modules/routing/app-routing.module';
 import { WelcomeComponent } from './pages/welcome/welcome.component';
@@ -22,7 +26,15 @@ import { CurrentTrainingComponent } from './components/training/current-training
 import { StopTrainingModalComponent } from './components/training/current-training/stop-training-modal/stop-training-modal.component';
 
 @NgModule({
-  imports: [BrowserModule, FormsModule, CoreModule, AppRoutingModule, BrowserAnimationsModule],
+  imports: [
+    BrowserModule,
+    FormsModule,
+    CoreModule,
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    AngularFireModule.initializeApp(environment.firebase),
+    AngularFirestoreModule
+  ],
   declarations: [
     AppComponent,
     WelcomeComponent,
