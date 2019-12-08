@@ -8,6 +8,7 @@
     "@angular/common": "8.2.14",
     "@angular/compiler": "8.2.14",
     "@angular/core": "8.2.14",
+    "@angular/fire": "^5.2.3",
     "@angular/flex-layout": "^8.0.0-beta.27",
     "@angular/forms": "8.2.14",
     "@angular/http": "7.2.15",
@@ -19,6 +20,7 @@
     "@types/jasminewd2": "2.0.8",
     "@types/node": "8.9.5",
     "core-js": "2.6.10",
+    "firebase": ">= 5.5.7 <8",
     "hammerjs": "2.0.8",
     "rxjs": "6.5.3",
     "zone.js": "0.9.1"
@@ -33,7 +35,6 @@
   },
   "devDependencies": {
     "@angular-devkit/build-angular": "~0.10.0",
-    
     "@angular/cli": "~7.0.2",
     "@angular/compiler-cli": "~7.0.0",
     "@angular/language-service": "~7.0.0",
